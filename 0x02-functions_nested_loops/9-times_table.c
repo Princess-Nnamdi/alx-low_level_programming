@@ -3,7 +3,7 @@
 /**
  * times_table - prints 9 times table
  * Description: prints 9 times table
- * Return: always 0
+ * Return: empty output
  **/
 
 void times_table(void)
@@ -17,7 +17,7 @@ void times_table(void)
 	z = x * y;
 	if (z > 9)
 	{
-	u = z & 10;
+	u = z % 10;
 	d = (z - u) / 10;
 	_putchar(44);
 	_putchar(32);
