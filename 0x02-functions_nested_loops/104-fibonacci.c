@@ -13,14 +13,15 @@ int main(void)
 
 	while (i < 98)
 	{
-		next = a + b;
-		a = b;
-		b = next;
-		printf("%lu", next);
 
+		printf("%lu", next);
 		if (i < 97)
 			printf(", ");
 		i++;
+
+		next = a + b;
+		a = b;
+		b = next;
 	}
 	putchar('\n');
 	return (0);
