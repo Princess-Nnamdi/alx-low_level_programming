@@ -8,20 +8,22 @@
 
 int main(void)
 {
-	int a = 0, b = 1, c, i;
+	int i = 0;
+	unsigned long long int a = 0, b = 1, next = 0;
 
-	printf("%d, %d, ", a, b);
-	for (i = 3; i <= 100; i++)
+	while (i < 98)
 	{
-	c = a + b;
-	printf("%d", c);
-	if (i != 100)
-	{
-		printf(", ");
+		next = a + b;
+		a = b;
+		b = next;
+		printf("%llu", next);
+
+		if (i < 97)
+		{
+			printf(", ");
+		}
+		i++;
 	}
-	a = b;
-	b = c;
-	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
