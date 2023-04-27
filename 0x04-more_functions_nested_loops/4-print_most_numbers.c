@@ -1,25 +1,20 @@
 #include "main.h"
 
 /**
- * print_most_numbers- prints 0 to 9 without 2 and 4
- * Description: prints some numbers
+ * print_most_numbers- prints from 0 to 9 except 2 and 4
+ * Return: void
+ * Description: a program printing most numbers
  **/
 
 void print_most_numbers(void)
 {
-	int c = 0, d;
+	char c;
 
-	while (c < 10)
+	for (c = '0'; c <= '9'; c++)
 	{
-		d = 0;
-		while (d < 10)
-		{
-			if (d == 2 || d == 4)
-				continue;
-		_putchar(d);
-		d++;
-		}
-	_putchar('\n');
-	c++;
+	if (c == '2' || c == '4')
+		continue;
+	_putchar(c);
 	}
+	_putchar('\n');
 }
