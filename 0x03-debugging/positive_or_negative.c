@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main- determines if a number is negative or positive
- * Return: 0 on success
+ * positive_or_negative- determines if a number is negative or positive
+ * @i: integer
  * 0 is the number being checked
  **/
 
@@ -20,5 +20,4 @@ void positive_or_negative(int i)
 	{
 	printf("%d is %s\n", i, "zero");
 	}
-	return;
 }
