@@ -33,8 +33,8 @@ char *cap_string(char *s)
 			i == 0)
 		{
 			s[i] -= 32;
-			i++;
 		}
+		i++;
 	}
 	return (s);
 }
