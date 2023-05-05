@@ -8,23 +8,29 @@
 
 void print_number(int n)
 {
-	int i, j, divisor = 1;
+	unsigned int k, p, count;
 
 	if (n < 0)
 	{
-		_putchar('-');
-		n = -n;
+		_putchar(45);
+		k = n * -1;
 	}
-	for (i = n; i / 10 != 0; i /= 10)
+	else
 	{
-		divisor *= 10;
+		k = n;
 	}
-	for (j = divisor; j != 0; j /= 10)
+
+	p = k;
+	count = 1;
+
+	while (p < 9)
 	{
-		_putchar((n / j) % 10 + '0');
+		p /= 10;
+		count *= 10;
 	}
-	if (n == 0)
+
+	for (; count >= 1; count /= 10)
 	{
-		_putchar('0');
+		_putchar(((k / count) % 10) + 48);
 	}
 }
