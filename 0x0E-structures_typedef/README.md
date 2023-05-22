@@ -1,0 +1,1 @@
+Practing structures and typedef
