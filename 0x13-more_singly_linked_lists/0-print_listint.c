@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * print_intlist- prints all elements of a list
+ * print_listint- prints all elements of a list
  * Description: prints all elements of a list
  * Return: number of nodes
  * @h: linked list
